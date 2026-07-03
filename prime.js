@@ -4,20 +4,25 @@
  * @returns {boolean} True if prime, false otherwise.
  */
 const isPrime = (num) => {
-    if(num<=1){
+    if (num <= 1) {
         return false;
     }
-    for(let i = 2; i <num; i++) {
+
+    for (let i = 2; i < num; i++) {
         if (num % i === 0) {
             return false;
         }
     }
+
     return true;
 };
-// Test
-    const number =17;
-    if (isPrime(number)) {
-        console.log(number + "is a Prime Number");
-    } else {
-        console.log(number + "is not a Prime Number");
-    }
+
+// Example
+let number = 17;
+
+if (isPrime(number)) {
+    console.log(number + " is a Prime Number");
+} else {
+    console.log(number + " is not a Prime Number");
+}
+module.exports = isPrime;
