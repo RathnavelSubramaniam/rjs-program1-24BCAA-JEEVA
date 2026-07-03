@@ -17,7 +17,6 @@ const isPrime = (num) => {
     return true;
 };
 
-// Example
 let number = 17;
 
 if (isPrime(number)) {
